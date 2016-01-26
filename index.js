@@ -45,6 +45,23 @@ app.get('/washingtonDCTweets', function (req, res) {
   });
 })
 
+app.get('/losAngelesTweets', function (req, res) {
+  client.get('search/tweets', {q: 'TRUMP', language: 'en', geocode: "34.035401,-118.247452,12mi"}, function(error, tweets, response) {
+      res.send(tweets);
+  });
+})
+
+app.get('/chicagoTweets', function (req, res) {
+  client.get('search/tweets', {q: 'TRUMP', language: 'en', geocode: "41.866834,-87.694473,4mi"}, function(error, tweets, response) {
+      res.send(tweets);
+  });
+})
+
+app.get('/houstonTweets', function (req, res) {
+  client.get('search/tweets', {q: 'TRUMP', language: 'en', geocode: "29.760427,-95.369803,14mi"}, function(error, tweets, response) {
+      res.send(tweets);
+  });
+})
 
 
 

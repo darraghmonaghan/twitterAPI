@@ -52,11 +52,14 @@
   text-align: center;
 }
 
-/*h2.cityname {
-  margin-top: 130px;
-}*/
 
-/*************************************/
+/************** Tweet Boxes  ***********************/
+
+h3 {
+  color: #716a6a;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 
 .tweetImg {
   max-height: 100%;
@@ -64,9 +67,12 @@
 }
 
 
+.tweetContent:hover {
+  background-color: yellow;
+}
 
 
-
+/*
 blockquote.twitter-tweet {
   display: inline-block;
   font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
@@ -99,4 +105,4 @@ blockquote.twitter-tweet a {
 blockquote.twitter-tweet a:hover,
 blockquote.twitter-tweet a:focus {
   text-decoration: underline;
-}
+}*/

@@ -39,6 +39,11 @@
 
 
 
+  <!-- Tweet font -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+
+
 </head>
 <body>
   <div class='container-fluid'>
@@ -57,7 +62,7 @@
 
           <div class='col-xs-12 col-sm-12 col-md-6 col-lg-4'>
               <div id='newYork' class='cityImg panel panel-default'> 
-                  <h2 class='cityName'>New York</h2>
+                  <h2 class='cityName'>New York City</h2>
               </div>
               <div id='tweet-placeholder-NYC'></div>
           </div>
@@ -76,6 +81,28 @@
                   <h2 class='cityName'>San Francisco</h2>
               </div>
               <div id='tweet-placeholder-SF'></div>
+         </div>
+
+
+         <div class='col-xs-12 col-sm-12 col-md-6 col-lg-4'>
+              <div id='LA' class='cityImg panel panel-default'> 
+                  <h2 class='cityName'>Los Angeles</h2>
+              </div>
+              <div id='tweet-placeholder-LA'></div>
+         </div>
+
+         <div class='col-xs-12 col-sm-12 col-md-6 col-lg-4'>
+              <div id='Chicago' class='cityImg panel panel-default'> 
+                  <h2 class='cityName'>Chicago</h2>
+              </div>
+              <div id='tweet-placeholder-Chicago'></div>
+         </div>
+
+         <div class='col-xs-12 col-sm-12 col-md-6 col-lg-4'>
+              <div id='Houston' class='cityImg panel panel-default'> 
+                  <h2 class='cityName'>Houston</h2>
+              </div>
+              <div id='tweet-placeholder-Houston'></div>
          </div>
 
       </div>
@@ -128,7 +155,7 @@
 
               <% if(entities.urls.length === 1) { %>
 
-                <h4><a href='<%= entities.urls[0].expanded_url %>'</h4>
+                <h5><a href='<%= entities.urls[0].expanded_url %>'><%= entities.urls[0].expanded_url %></a></h5>
 
               <% } %>
 
