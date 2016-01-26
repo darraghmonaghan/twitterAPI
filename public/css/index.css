@@ -1,5 +1,26 @@
 
 
+/******************* City Index Div   href's   **********************/
+
+.cityIndex {
+  text-align: center;
+  color: #716a6a;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  font-size: 3ch;
+}
+
+.cityIndex:hover {
+  background-color: #716a6a;
+  color: white;
+  text-decoration: italic;
+}
+
+
+
+/****************** City heading image divs  **********************/
+
 #washingtonDC {
   background-image: url("../images/DC.jpg");
   background-size: cover;
@@ -20,11 +41,6 @@
   background-repeat: no-repeat;
   font-family: 'Raleway', sans-serif;
   color: rgba(250, 220, 20, 1);
-/*  text-shadow:
-    -1px -1px 0 #bf6e12,
-    1px -1px 0 #bf6e12,
-    -1px 1px 0 #bf6e12,
-    1px 1px 0 #bf6e12;*/
 }
 
 
@@ -32,14 +48,47 @@
   background-image: url("../images/SFcity.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Playball', cursive;
+  font-family: 'Lobster', cursive;
   color: rgba(103, 15, 159, 1);
   text-shadow:
-    -1px -1px 0 #bf6e12,
-    1px -1px 0 #bf6e12,
-    -1px 1px 0 #bf6e12,
-    1px 1px 0 #bf6e12;
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
 }
+
+#LA {
+  background-image: url("../images/LA.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Poiret One', cursive;
+  text-decoration: bold;
+  color: rgba(9, 197, 211, 1);
+  text-shadow:
+    -1px -1px 0 #f514a3,
+    1px -1px 0 #f514a3,
+    -1px 1px 0 #f514a3,
+    1px 1px 0 #f514a3;
+}
+
+#Chicago {
+  background-image: url("../images/Chicago.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Muli', sans-serif;
+  color: white;
+}
+
+
+#Houston {
+  background-image: url("../images/Houston.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Orbitron', sans-serif;
+  color: rgba(126, 32, 32, 1);
+}
+
+
 
 .cityImg {
   height: 300px;
@@ -67,42 +116,6 @@ h3 {
 }
 
 
-.tweetContent:hover {
+/*.tweetContent:hover {
   background-color: yellow;
-}
-
-
-/*
-blockquote.twitter-tweet {
-  display: inline-block;
-  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 16px;
-  border-color: #eee #ddd #bbb;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-  margin: 10px 5px;
-  padding: 0 16px 16px 16px;
-  max-width: 468px;
-}
- 
-blockquote.twitter-tweet p {
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 20px;
-}
- 
-blockquote.twitter-tweet a {
-  color: inherit;
-  font-weight: normal;
-  text-decoration: none;
-  outline: 0 none;
-}
- 
-blockquote.twitter-tweet a:hover,
-blockquote.twitter-tweet a:focus {
-  text-decoration: underline;
 }*/
