@@ -27,13 +27,23 @@ var client = new Twitter({
 var params = {screen_name: 'nodejs'};
 
 
-// successfully renders on client side!!!! BOOM. Well done, keep your chin up!!!
-app.get('/test', function (req, res) {
-  client.get('search/tweets', {q: 'TRUMP', language: 'en', location: "37.754249,-122.391186,37.782338,-122.428951"}, function(error, tweets, response) {
+app.get('/sanFranciscoTweets', function (req, res) {
+  client.get('search/tweets', {q: 'TRUMP', language: 'en', geocode: "37.778765,-122.424660,5km"}, function(error, tweets, response) {
       res.send(tweets);
   });
 })
 
+app.get('/newYorkTweets', function (req, res) {
+  client.get('search/tweets', {q: 'TRUMP', language: 'en', geocode: "40.758007,-73.982391,10km"}, function(error, tweets, response) {
+      res.send(tweets);
+  });
+})
+
+app.get('/washingtonDCTweets', function (req, res) {
+  client.get('search/tweets', {q: 'TRUMP', language: 'en', geocode: "38.902745,-77.029781,4mi"}, function(error, tweets, response) {
+      res.send(tweets);
+  });
+})
 
 
 

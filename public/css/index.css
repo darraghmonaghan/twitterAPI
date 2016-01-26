@@ -1,5 +1,33 @@
 
 
+#washingtonDC {
+  background-image: url("../images/DC.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Libre Baskerville', serif;
+  color: rgba(113, 4, 13, 1);
+  text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+}
+
+
+#newYork {
+  background-image: url("../images/NYC.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Raleway', sans-serif;
+  color: rgba(250, 220, 20, 1);
+/*  text-shadow:
+    -1px -1px 0 #bf6e12,
+    1px -1px 0 #bf6e12,
+    -1px 1px 0 #bf6e12,
+    1px 1px 0 #bf6e12;*/
+}
+
+
 #sanFrancisco {
   background-image: url("../images/SFcity.jpg");
   background-size: cover;
