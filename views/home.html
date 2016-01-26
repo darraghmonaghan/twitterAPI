@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Title</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- jquery -->  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
+  <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  
+  <!-- underscore -->
+  <script src="/vendor/underscore/underscore-min.js"></script>
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+
+  <!-- javascript sheet -->
+  <script src="/static/javascript/home.js"></script>
+
+
+  <!-- Google Fonts -->
+
+  <!-- San Francisco -->
+  <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+<body>
+  <div class='container-fluid'>
+
+
+
+      <div class='row'>
+
+          <!-- Eventually rename to different city -->
+    	   <div id='testDiv1' class='panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-4'>Test Stuff Here</div>
+         
+
+         <div id='testDiv2' class='panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-4'>More 
+         Test Stuff Here</div>
+
+
+         <div class='col-xs-12 col-sm-12 col-md-6 col-lg-4'>
+           <div id='newYork' class='cityImg panel panel-default'> 
+              <h2 class='cityName'>New York</h2>
+           </div>
+           <div id='tweet-placeholder-NYC'></div>
+
+
+         
+         <div class='col-xs-12 col-sm-12 col-md-6 col-lg-4'>
+           <div id='sanFrancisco' class='cityImg panel panel-default'> 
+              <h2 class='cityName'>San Francisco</h2>
+           </div>
+           <div id='tweet-placeholder-SF'></div>
+         </div>
+
+      </div>
+  </div>
+
+</body>
+</html>
+
+
+
+<!-- https://twitter.com/search?q=%23Ukraine&src=typd -->
+
+
+  <script type='text/template' id='tweets-template'>
+
+      <div class='panel panel-default'>
+          <div class='panel-body tweetContent'>
+              <h3><%= text %></h3>
+
+
+              <% if(entities.media !== undefined) { %>
+
+                <img class='tweetImg col-xs-12 col-sm-12 col-md-12 col-lg-12' src="<%= entities.media[0].media_url_https %>"><br>
+
+              <% } %>
+
+
+              <% if(entities.hashtags.length === 1) { %>
+
+                <h4><a href="https://twitter.com/search?q=%23<%= entities.hashtags[0].text %>&src=typd">#<%= entities.hashtags[0].text %></a></h4>
+
+              <% } else if(entities.hashtags.length === 2) { %>  
+
+                <h4><a href="https://twitter.com/search?q=%23<%= entities.hashtags[0].text %>&src=typd">#<%= entities.hashtags[0].text %></a> <a href="https://twitter.com/search?q=%23<%= entities.hashtags[1].text %>&src=typd">#<%= entities.hashtags[1].text %></a></h4>
+
+              <% } else if(entities.hashtags.length === 3) { %>
+
+                <h4><a href="https://twitter.com/search?q=%23<%= entities.hashtags[0].text %>&src=typd">#<%= entities.hashtags[0].text %></a> <a href="https://twitter.com/search?q=%23<%= entities.hashtags[1].text %>&src=typd">#<%= entities.hashtags[1].text %></a> <a href="https://twitter.com/search?q=%23<%= entities.hashtags[2].text %>&src=typd">#<%= entities.hashtags[2].text %></a></h4> 
+
+              <% } else if(entities.hashtags.length === 4) { %>
+
+                <h4><a href="https://twitter.com/search?q=%23<%= entities.hashtags[0].text %>&src=typd">#<%= entities.hashtags[0].text %></a> <a href="https://twitter.com/search?q=%23<%= entities.hashtags[1].text %>&src=typd">#<%= entities.hashtags[1].text %></a> <a href="https://twitter.com/search?q=%23<%= entities.hashtags[2].text %>&src=typd">#<%= entities.hashtags[2].text %></a> <a href="https://twitter.com/search?q=%23<%= entities.hashtags[3].text %>&src=typd">#<%= entities.hashtags[3].text %></a></h4> 
+
+              <% } else if(entities.hashtags.length === 5) { %>
+
+                <h4><a href="https://twitter.com/search?q=%23<%= entities.hashtags[0].text %>&src=typd">#<%= entities.hashtags[0].text %></a> <a href="https://twitter.com/search?q=%23<%= entities.hashtags[1].text %>&src=typd">#<%= entities.hashtags[1].text %></a> <a href="https://twitter.com/search?q=%23<%= entities.hashtags[2].text %>&src=typd">#<%= entities.hashtags[2].text %></a> <a href="https://twitter.com/search?q=%23<%= entities.hashtags[3].text %>&src=typd">#<%= entities.hashtags[3].text %></a> <a href="https://twitter.com/search?q=%23<%= entities.hashtags[3].text %>&src=typd">#<%= entities.hashtags[4].text %></a></h4> 
+
+              <% } %>
+
+
+              <% if(entities.urls.length === 1) { %>
+
+                <h4><a href='<%= entities.urls[0].expanded_url %>'</h4>
+
+              <% } %>
+
+
+
+          </div>
+      </div>
+
+          
+
+
+
+  </script>
+
+
+
