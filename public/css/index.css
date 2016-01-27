@@ -1,20 +1,62 @@
 
+/****************************  JumboTron  ****************************/
+
+.jumbotron {
+  background-image: url("../images/flag.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.jumbotron h1 {
+  font-weight: 700;
+  color: #716a6a;
+  font-family: 'Libre Baskerville', serif; 
+  text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+.jumbotron h2 {
+  font-weight: 400;
+  color: #716a6a;
+  text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+/*.jumbotron h4 {
+  font-weight: 400;
+  color: yellow;
+}*/
+
+
+
 
 /******************* City Index Div   href's   **********************/
 
 .cityIndex {
   text-align: center;
-  color: #716a6a;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #716a6a,
+    1px -1px 0 #716a6a,
+    -1px 1px 0 #716a6a,
+    1px 1px 0 #716a6a;
   font-family: 'Roboto Condensed', sans-serif;
   padding-top: 10px;
   padding-bottom: 10px; 
-  font-size: 3ch;
+  font-size: 4ch;
 }
 
 .cityIndex:hover {
-  background-color: #716a6a;
-  color: white;
-  text-decoration: italic;
+  background-color: white;
+  color: #716a6a;
+  text-shadow: none;
 }
 
 
