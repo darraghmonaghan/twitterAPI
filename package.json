@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "postinstall": "bower install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,6 +16,7 @@
     "express": "^4.13.4",
     "foobar": "^1.1.0",
     "jquery": "^2.2.0",
+    "pg": "4.4.4",
     "request": "^2.67.0",
     "underscore": "^1.8.3"
   }
