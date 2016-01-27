@@ -1,0 +1,22 @@
+{
+  "name": "twexodus",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "monaghan.darragh@gmail.com <monaghan.darragh@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/darraghmonaghan/twitterAPI",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "underscore": "~1.8.3"
+  }
+}
