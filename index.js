@@ -28,37 +28,37 @@ var params = {screen_name: 'nodejs'};
 
 
 app.get('/sanFranciscoTweets', function (req, res) {
-  client.get('search/tweets', {q: '#Election2016', language: 'en', geocode: "37.778765,-122.424660,15km"}, function(error, tweets, response) {
+  client.get('search/tweets', {q: 'Trump OR vote OR politics OR #WhiteHouse OR #Election2016', language: 'en', geocode: "37.778765,-122.424660,15km"}, function(error, tweets, response) {
       res.send(tweets);
   });
 })
 
 app.get('/newYorkTweets', function (req, res) {
-  client.get('search/tweets', {q: '#Election2016', language: 'en', geocode: "40.758007,-73.982391,20km"}, function(error, tweets, response) {
+  client.get('search/tweets', {q: 'Trump OR vote OR politics OR #WhiteHouse OR #Election2016', language: 'en', geocode: "40.758007,-73.982391,20km"}, function(error, tweets, response) {
       res.send(tweets);
   });
 })
 
 app.get('/washingtonDCTweets', function (req, res) {
-  client.get('search/tweets', {q: '#Election2016', language: 'en', geocode: "38.902745,-77.029781,8mi"}, function(error, tweets, response) {
+  client.get('search/tweets', {q: 'Trump OR vote OR politics OR #WhiteHouse OR #Election2016', language: 'en', geocode: "38.902745,-77.029781,8mi"}, function(error, tweets, response) {
       res.send(tweets);
   });
 })
 
 app.get('/losAngelesTweets', function (req, res) {
-  client.get('search/tweets', {q: '#Election2016', language: 'en', geocode: "34.035401,-118.247452,20mi"}, function(error, tweets, response) {
+  client.get('search/tweets', {q: 'Trump OR vote OR politics OR #WhiteHouse OR #Election2016', language: 'en', geocode: "34.035401,-118.247452,20mi"}, function(error, tweets, response) {
       res.send(tweets);
   });
 })
 
 app.get('/chicagoTweets', function (req, res) {
-  client.get('search/tweets', {q: '#Election2016', language: 'en', geocode: "41.866834,-87.694473,8mi"}, function(error, tweets, response) {
+  client.get('search/tweets', {q: 'Trump OR vote OR politics OR #WhiteHouse OR #Election2016', language: 'en', geocode: "41.866834,-87.694473,8mi"}, function(error, tweets, response) {
       res.send(tweets);
   });
 })
 
 app.get('/houstonTweets', function (req, res) {
-  client.get('search/tweets', {q: '#Election2016', language: 'en', geocode: "29.760427,-95.369803,20mi"}, function(error, tweets, response) {
+  client.get('search/tweets', {q: 'Trump OR vote OR politics OR #WhiteHouse OR #Election2016', language: 'en', geocode: "29.760427,-95.369803,20mi"}, function(error, tweets, response) {
       res.send(tweets);
   });
 })
