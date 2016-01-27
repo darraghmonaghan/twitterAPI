@@ -2,16 +2,16 @@
 /****************************  JumboTron  ****************************/
 
 .jumbotron {
-  background-image: url("../images/flag.jpg");
+  background-image: url("../images/flag.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Quicksand', sans-serif;
 }
 
 .jumbotron h1 {
   font-weight: 700;
-  color: #716a6a;
-  font-family: 'Libre Baskerville', serif; 
+  color: #790000;
+  font-family: 'Arimo', sans-serif;
+  font-size: 80px;
   text-shadow:
     -1px -1px 0 white,
     1px -1px 0 white,
@@ -21,7 +21,9 @@
 
 .jumbotron h2 {
   font-weight: 400;
-  color: #716a6a;
+  color: #790000;
+  font-family: 'Arimo', sans-serif;
+  font-size: 40px;
   text-shadow:
     -1px -1px 0 white,
     1px -1px 0 white,
@@ -54,9 +56,10 @@
 }
 
 .cityIndex:hover {
-  background-color: white;
-  color: #716a6a;
+  background-color: #FAECED;
+  color: #790000;
   text-shadow: none;
+  border: 2px solid #790000; 
 }
 
 
@@ -67,7 +70,7 @@
   background-image: url("../images/DC.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Slabo 27px', serif;
   color: rgba(113, 4, 13, 1);
   text-shadow:
     -1px -1px 0 #ffffff,
