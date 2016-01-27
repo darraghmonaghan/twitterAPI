@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "engines": {
-  "node": "5.2.0"
+    "node": "5.2.0"
   },
   "scripts": {
     "start": "node index.js",
@@ -15,13 +15,14 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.14.2",
-    "bower": "^1.5.2",
     "bootstrap": "^3.3.6",
+    "bower": "^1.5.2",
     "express": "^4.13.4",
     "foobar": "^1.1.0",
     "jquery": "^2.2.0",
     "pg": "4.4.4",
     "request": "^2.67.0",
+    "twitter": "^1.2.5",
     "underscore": "^1.8.3"
   }
 }
